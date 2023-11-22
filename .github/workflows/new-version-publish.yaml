@@ -1,0 +1,30 @@
+name: New-Version-Publish
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [master]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "version"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[skip ci]') == false
+    env:
+      USER_EMAIL: ${{ secrets.USER_EMAIL }}
+      USER_NAME: ${{ secrets.USER_NAME }}
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Auto Version & Publish
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+          sh ./build/publish.sh
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

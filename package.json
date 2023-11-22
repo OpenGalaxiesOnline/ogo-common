@@ -3,6 +3,9 @@
   "version": "2023.11.1",
   "description": "All Common Models and Utility Classes for OpenGalaxiesOnline.",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf dist && npx tsc"
