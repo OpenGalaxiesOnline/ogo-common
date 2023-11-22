@@ -1,6 +1,6 @@
 {
   "name": "@snowlynxsoftware/ogo-common",
-  "version": "2023.11.2",
+  "version": "2023.11.3",
   "description": "All Common Models and Utility Classes for OpenGalaxiesOnline.",
   "main": "dist/index.js",
   "publishConfig": {
