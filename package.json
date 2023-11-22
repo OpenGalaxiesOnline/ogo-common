@@ -1,6 +1,6 @@
 {
   "name": "@opengalaxiesonline/ogo-common",
-  "version": "2023.11.5",
+  "version": "2023.11.6",
   "description": "All Common Models and Utility Classes for OpenGalaxiesOnline.",
   "main": "dist/index.js",
   "publishConfig": {
