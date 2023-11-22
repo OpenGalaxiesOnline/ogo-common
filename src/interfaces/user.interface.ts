@@ -9,5 +9,5 @@ export interface IUser extends IBaseEntity {
   banned_until?: Date;
   banned_message?: string;
   allow_newsletter: boolean;
-  last_login: Date;
+  last_login?: Date;
 }
