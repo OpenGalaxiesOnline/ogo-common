@@ -1,0 +1,32 @@
+# Github
+.github/
+
+# Source Code
+src/
+
+# Npm
+.npmrc
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+tsconfig.json
+
+# Optional npm cache directory
+.npm
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env
+
+# generate output
+dist
