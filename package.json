@@ -1,5 +1,5 @@
 {
-  "name": "@snowlynxsoftware/ogo-common",
+  "name": "@opengalaxiesonline/ogo-common",
   "version": "2023.11.3",
   "description": "All Common Models and Utility Classes for OpenGalaxiesOnline.",
   "main": "dist/index.js",
